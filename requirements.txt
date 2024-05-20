@@ -7,8 +7,8 @@ python-box==6.0.2
 pyYAML
 ensure==1.0.2
 joblib
-type-pyYAML
 Flask
 Flask-Cors
+
 
 -e .
