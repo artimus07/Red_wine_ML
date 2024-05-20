@@ -1,1 +1,3 @@
-from src.Red_Wine.config import configurations
+from Red_Wine import logger
+
+logger.info('this is out custom log!')
