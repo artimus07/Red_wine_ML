@@ -43,7 +43,7 @@ def create_directiories(path_to_direcotries: list, verbose=True):
     '''
 
     for path in path_to_direcotries:
-        os.mkdir(path, exist_ok = True)
+        os.makedirs(path, exist_ok=True)
         if verbose:
             logger.info(f'directory {path} created')
 
@@ -73,7 +73,7 @@ def load_json(path:Path)-> ConfigBox:
     with open(path) as f:
         content = json.load(f)
     
-    logger.info(f"json file loaded successfully from:" {path})
+    logger.info(f"json file loaded succesfully from: {path}")
     return ConfigBox(content)
 
 @ensure_annotations
